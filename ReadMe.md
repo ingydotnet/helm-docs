@@ -15,6 +15,8 @@ The repo contains a `mkdocs.yml` config file, which at the moment is minimal.
 The site currently only serves the `en` English pages, but will soon serve all
 language content.
 
+The published site is here: <https://ingydotnet.github.io/helm-docs/>.
+
 
 ## Usage
 
