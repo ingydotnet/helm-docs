@@ -1,0 +1,4 @@
+/.venv/
+/helm-www/
+/docs/
+mkdocs.yml
