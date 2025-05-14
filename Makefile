@@ -41,8 +41,6 @@ publish: site
 serve: $(DIRS) $(DEPS)
 	$(VENV) && mkdocs $@
 
-
-
 clean:
 	$(RM) -r site
 
@@ -58,7 +56,9 @@ $(PYTHON_VENV):
 
 docs/index.md: helm-www
 	cp -r $</content/en/docs docs
-	mv docs/_index.md $@
+	for f in $$(find docs/ -name _index.md); \
+	  do mv $$f $${f/_index/index}; \
+	done
 
 helm-www:
 	git clone -q $(HELM-DOCS-REPO)
