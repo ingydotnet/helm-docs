@@ -3,6 +3,7 @@ site_url: https://ingydotnet.github.io/helm-docs
 
 theme:
   name: material
+  custom_dir: theme
 
 repo_name: GitHub
 repo_url: https://github.com/ingydotnet/helm-docs
