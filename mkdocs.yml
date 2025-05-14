@@ -1,12 +1,21 @@
 site_name: Helm Docs
 site_url: https://ingydotnet.github.io/helm-docs
 
+repo_name: GitHub
+repo_url: https://github.com/ingydotnet/helm-docs
+
+edit_uri:
+  https://github.com/helm/helm-www/tree/main/content/en/docs
+
 theme:
   name: material
   custom_dir: theme
-
-repo_name: GitHub
-repo_url: https://github.com/ingydotnet/helm-docs
+  features:
+  - content.action.edit
+  - content.action.view
+  icon:
+    edit: material/pencil
+    view: material/eye
 
 extra:
   alternate:
