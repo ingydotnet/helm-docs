@@ -6,29 +6,27 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Terms used to describe components of Helm's architecture.">
       
       
-      
-        <link rel="canonical" href="https://ingydotnet.github.io/helm-docs/glossary/_index/">
-      
-      
-        <link rel="prev" href="../../faq/uninstalling/">
+        <link rel="canonical" href="https://ingydotnet.github.io/helm-docs/intro/">
       
       
-        <link rel="next" href="../../helm/_index/">
+        <link rel="prev" href="../howto/charts_tips_and_tricks/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+        <link rel="next" href="CheatSheet/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Glossary - Helm Docs</title>
+        <title>Introduction - Helm Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -47,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#glossary" class="md-skip">
+        <a href="#introduction-to-helm" class="md-skip">
           Skip to content
         </a>
       
@@ -82,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Helm Docs" class="md-header__button md-logo" aria-label="Helm Docs" data-md-component="logo">
+    <a href=".." title="Helm Docs" class="md-header__button md-logo" aria-label="Helm Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -102,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Glossary
+              Introduction
             
           </span>
         </div>
@@ -112,6 +110,86 @@
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/en/docs/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/de/docs/" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/es/docs/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/fr/docs/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/gr/docs/" hreflang="gr" class="md-select__link">
+              Ελληνικά
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ja/docs/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ko/docs/" hreflang="ko" class="md-select__link">
+              한국어
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/pt/docs/" hreflang="pt" class="md-select__link">
+              Português
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ru/docs/" hreflang="ru" class="md-select__link">
+              Русский
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/uk/docs/" hreflang="uk" class="md-select__link">
+              Українська
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/zh/docs/" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
     
     
       
@@ -192,7 +270,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Helm Docs" class="md-nav__button md-logo" aria-label="Helm Docs" data-md-component="logo">
+    <a href=".." title="Helm Docs" class="md-nav__button md-logo" aria-label="Helm Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -222,7 +300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -282,7 +360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_best_practices/_index/" class="md-nav__link">
+      <a href="../chart_best_practices/" class="md-nav__link">
         
   
   
@@ -305,7 +383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_best_practices/conventions/" class="md-nav__link">
+      <a href="../chart_best_practices/conventions/" class="md-nav__link">
         
   
   
@@ -328,7 +406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_best_practices/custom_resource_definitions/" class="md-nav__link">
+      <a href="../chart_best_practices/custom_resource_definitions/" class="md-nav__link">
         
   
   
@@ -351,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_best_practices/dependencies/" class="md-nav__link">
+      <a href="../chart_best_practices/dependencies/" class="md-nav__link">
         
   
   
@@ -374,7 +452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_best_practices/labels/" class="md-nav__link">
+      <a href="../chart_best_practices/labels/" class="md-nav__link">
         
   
   
@@ -397,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_best_practices/pods/" class="md-nav__link">
+      <a href="../chart_best_practices/pods/" class="md-nav__link">
         
   
   
@@ -420,7 +498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_best_practices/rbac/" class="md-nav__link">
+      <a href="../chart_best_practices/rbac/" class="md-nav__link">
         
   
   
@@ -443,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_best_practices/templates/" class="md-nav__link">
+      <a href="../chart_best_practices/templates/" class="md-nav__link">
         
   
   
@@ -466,7 +544,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_best_practices/values/" class="md-nav__link">
+      <a href="../chart_best_practices/values/" class="md-nav__link">
         
   
   
@@ -534,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/_index/" class="md-nav__link">
+      <a href="../chart_template_guide/" class="md-nav__link">
         
   
   
@@ -557,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/accessing_files/" class="md-nav__link">
+      <a href="../chart_template_guide/accessing_files/" class="md-nav__link">
         
   
   
@@ -580,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/builtin_objects/" class="md-nav__link">
+      <a href="../chart_template_guide/builtin_objects/" class="md-nav__link">
         
   
   
@@ -603,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/control_structures/" class="md-nav__link">
+      <a href="../chart_template_guide/control_structures/" class="md-nav__link">
         
   
   
@@ -626,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/data_types/" class="md-nav__link">
+      <a href="../chart_template_guide/data_types/" class="md-nav__link">
         
   
   
@@ -649,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/debugging/" class="md-nav__link">
+      <a href="../chart_template_guide/debugging/" class="md-nav__link">
         
   
   
@@ -672,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/function_list/" class="md-nav__link">
+      <a href="../chart_template_guide/function_list/" class="md-nav__link">
         
   
   
@@ -695,7 +773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/functions_and_pipelines/" class="md-nav__link">
+      <a href="../chart_template_guide/functions_and_pipelines/" class="md-nav__link">
         
   
   
@@ -718,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/getting_started/" class="md-nav__link">
+      <a href="../chart_template_guide/getting_started/" class="md-nav__link">
         
   
   
@@ -741,7 +819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/helm_ignore_file/" class="md-nav__link">
+      <a href="../chart_template_guide/helm_ignore_file/" class="md-nav__link">
         
   
   
@@ -764,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/named_templates/" class="md-nav__link">
+      <a href="../chart_template_guide/named_templates/" class="md-nav__link">
         
   
   
@@ -787,7 +865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/notes_files/" class="md-nav__link">
+      <a href="../chart_template_guide/notes_files/" class="md-nav__link">
         
   
   
@@ -810,7 +888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/subcharts_and_globals/" class="md-nav__link">
+      <a href="../chart_template_guide/subcharts_and_globals/" class="md-nav__link">
         
   
   
@@ -833,7 +911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/values_files/" class="md-nav__link">
+      <a href="../chart_template_guide/values_files/" class="md-nav__link">
         
   
   
@@ -856,7 +934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/variables/" class="md-nav__link">
+      <a href="../chart_template_guide/variables/" class="md-nav__link">
         
   
   
@@ -879,7 +957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/wrapping_up/" class="md-nav__link">
+      <a href="../chart_template_guide/wrapping_up/" class="md-nav__link">
         
   
   
@@ -902,7 +980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../chart_template_guide/yaml_techniques/" class="md-nav__link">
+      <a href="../chart_template_guide/yaml_techniques/" class="md-nav__link">
         
   
   
@@ -970,7 +1048,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../community/_index/" class="md-nav__link">
+      <a href="../community/" class="md-nav__link">
         
   
   
@@ -993,7 +1071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../community/developers/" class="md-nav__link">
+      <a href="../community/developers/" class="md-nav__link">
         
   
   
@@ -1016,7 +1094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../community/history/" class="md-nav__link">
+      <a href="../community/history/" class="md-nav__link">
         
   
   
@@ -1039,7 +1117,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../community/localization/" class="md-nav__link">
+      <a href="../community/localization/" class="md-nav__link">
         
   
   
@@ -1062,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../community/related/" class="md-nav__link">
+      <a href="../community/related/" class="md-nav__link">
         
   
   
@@ -1085,7 +1163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../community/release_checklist/" class="md-nav__link">
+      <a href="../community/release_checklist/" class="md-nav__link">
         
   
   
@@ -1153,7 +1231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/_index/" class="md-nav__link">
+      <a href="../faq/" class="md-nav__link">
         
   
   
@@ -1176,7 +1254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/changes_since_helm2/" class="md-nav__link">
+      <a href="../faq/changes_since_helm2/" class="md-nav__link">
         
   
   
@@ -1199,7 +1277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/installing/" class="md-nav__link">
+      <a href="../faq/installing/" class="md-nav__link">
         
   
   
@@ -1222,7 +1300,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/troubleshooting/" class="md-nav__link">
+      <a href="../faq/troubleshooting/" class="md-nav__link">
         
   
   
@@ -1245,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq/uninstalling/" class="md-nav__link">
+      <a href="../faq/uninstalling/" class="md-nav__link">
         
   
   
@@ -1272,20 +1350,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -1301,7 +1377,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Glossary
@@ -1312,32 +1388,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Glossary
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
         
   
   
@@ -1348,179 +1402,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#chart" class="md-nav__link">
-    <span class="md-ellipsis">
-      Chart
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chart-archive" class="md-nav__link">
-    <span class="md-ellipsis">
-      Chart Archive
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chart-dependency-subcharts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Chart Dependency (Subcharts)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chart-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      Chart Version
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chartyaml" class="md-nav__link">
-    <span class="md-ellipsis">
-      Chart.yaml
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#helm-and-helm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Helm (and helm)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#helm-configuration-files-xdg" class="md-nav__link">
-    <span class="md-ellipsis">
-      Helm Configuration Files (XDG)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kube-config-kubeconfig" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kube Config (KUBECONFIG)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lint-linting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lint (Linting)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#provenance-provenance-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Provenance (Provenance file)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#release" class="md-nav__link">
-    <span class="md-ellipsis">
-      Release
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#release-number-release-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      Release Number (Release Version)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rollback" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rollback
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#helm-library-or-sdk" class="md-nav__link">
-    <span class="md-ellipsis">
-      Helm Library (or SDK)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#repository-repo-chart-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      Repository (Repo, Chart Repository)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chart-registry-oci-based-registry" class="md-nav__link">
-    <span class="md-ellipsis">
-      Chart Registry (OCI-based Registry)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#values-values-files-valuesyaml" class="md-nav__link">
-    <span class="md-ellipsis">
-      Values (Values Files, values.yaml)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1578,7 +1459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/_index/" class="md-nav__link">
+      <a href="../helm/" class="md-nav__link">
         
   
   
@@ -1601,7 +1482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm/" class="md-nav__link">
+      <a href="../helm/helm/" class="md-nav__link">
         
   
   
@@ -1624,7 +1505,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_completion/" class="md-nav__link">
+      <a href="../helm/helm_completion/" class="md-nav__link">
         
   
   
@@ -1647,7 +1528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_completion_bash/" class="md-nav__link">
+      <a href="../helm/helm_completion_bash/" class="md-nav__link">
         
   
   
@@ -1670,7 +1551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_completion_fish/" class="md-nav__link">
+      <a href="../helm/helm_completion_fish/" class="md-nav__link">
         
   
   
@@ -1693,7 +1574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_completion_powershell/" class="md-nav__link">
+      <a href="../helm/helm_completion_powershell/" class="md-nav__link">
         
   
   
@@ -1716,7 +1597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_completion_zsh/" class="md-nav__link">
+      <a href="../helm/helm_completion_zsh/" class="md-nav__link">
         
   
   
@@ -1739,7 +1620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_create/" class="md-nav__link">
+      <a href="../helm/helm_create/" class="md-nav__link">
         
   
   
@@ -1762,7 +1643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_delete/" class="md-nav__link">
+      <a href="../helm/helm_delete/" class="md-nav__link">
         
   
   
@@ -1785,7 +1666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_dependency/" class="md-nav__link">
+      <a href="../helm/helm_dependency/" class="md-nav__link">
         
   
   
@@ -1808,7 +1689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_dependency_build/" class="md-nav__link">
+      <a href="../helm/helm_dependency_build/" class="md-nav__link">
         
   
   
@@ -1831,7 +1712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_dependency_list/" class="md-nav__link">
+      <a href="../helm/helm_dependency_list/" class="md-nav__link">
         
   
   
@@ -1854,7 +1735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_dependency_update/" class="md-nav__link">
+      <a href="../helm/helm_dependency_update/" class="md-nav__link">
         
   
   
@@ -1877,7 +1758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_env/" class="md-nav__link">
+      <a href="../helm/helm_env/" class="md-nav__link">
         
   
   
@@ -1900,7 +1781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_get/" class="md-nav__link">
+      <a href="../helm/helm_get/" class="md-nav__link">
         
   
   
@@ -1923,7 +1804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_get_all/" class="md-nav__link">
+      <a href="../helm/helm_get_all/" class="md-nav__link">
         
   
   
@@ -1946,7 +1827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_get_hooks/" class="md-nav__link">
+      <a href="../helm/helm_get_hooks/" class="md-nav__link">
         
   
   
@@ -1969,7 +1850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_get_manifest/" class="md-nav__link">
+      <a href="../helm/helm_get_manifest/" class="md-nav__link">
         
   
   
@@ -1992,7 +1873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_get_metadata/" class="md-nav__link">
+      <a href="../helm/helm_get_metadata/" class="md-nav__link">
         
   
   
@@ -2015,7 +1896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_get_notes/" class="md-nav__link">
+      <a href="../helm/helm_get_notes/" class="md-nav__link">
         
   
   
@@ -2038,7 +1919,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_get_values/" class="md-nav__link">
+      <a href="../helm/helm_get_values/" class="md-nav__link">
         
   
   
@@ -2061,7 +1942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_history/" class="md-nav__link">
+      <a href="../helm/helm_history/" class="md-nav__link">
         
   
   
@@ -2084,7 +1965,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_init/" class="md-nav__link">
+      <a href="../helm/helm_init/" class="md-nav__link">
         
   
   
@@ -2107,7 +1988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_inspect/" class="md-nav__link">
+      <a href="../helm/helm_inspect/" class="md-nav__link">
         
   
   
@@ -2130,7 +2011,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_install/" class="md-nav__link">
+      <a href="../helm/helm_install/" class="md-nav__link">
         
   
   
@@ -2153,7 +2034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_lint/" class="md-nav__link">
+      <a href="../helm/helm_lint/" class="md-nav__link">
         
   
   
@@ -2176,7 +2057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_list/" class="md-nav__link">
+      <a href="../helm/helm_list/" class="md-nav__link">
         
   
   
@@ -2199,7 +2080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_package/" class="md-nav__link">
+      <a href="../helm/helm_package/" class="md-nav__link">
         
   
   
@@ -2222,7 +2103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_plugin/" class="md-nav__link">
+      <a href="../helm/helm_plugin/" class="md-nav__link">
         
   
   
@@ -2245,7 +2126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_plugin_install/" class="md-nav__link">
+      <a href="../helm/helm_plugin_install/" class="md-nav__link">
         
   
   
@@ -2268,7 +2149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_plugin_list/" class="md-nav__link">
+      <a href="../helm/helm_plugin_list/" class="md-nav__link">
         
   
   
@@ -2291,7 +2172,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_plugin_uninstall/" class="md-nav__link">
+      <a href="../helm/helm_plugin_uninstall/" class="md-nav__link">
         
   
   
@@ -2314,7 +2195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_plugin_update/" class="md-nav__link">
+      <a href="../helm/helm_plugin_update/" class="md-nav__link">
         
   
   
@@ -2337,7 +2218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_pull/" class="md-nav__link">
+      <a href="../helm/helm_pull/" class="md-nav__link">
         
   
   
@@ -2360,7 +2241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_push/" class="md-nav__link">
+      <a href="../helm/helm_push/" class="md-nav__link">
         
   
   
@@ -2383,7 +2264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_registry/" class="md-nav__link">
+      <a href="../helm/helm_registry/" class="md-nav__link">
         
   
   
@@ -2406,7 +2287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_registry_login/" class="md-nav__link">
+      <a href="../helm/helm_registry_login/" class="md-nav__link">
         
   
   
@@ -2429,7 +2310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_registry_logout/" class="md-nav__link">
+      <a href="../helm/helm_registry_logout/" class="md-nav__link">
         
   
   
@@ -2452,7 +2333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_repo/" class="md-nav__link">
+      <a href="../helm/helm_repo/" class="md-nav__link">
         
   
   
@@ -2475,7 +2356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_repo_add/" class="md-nav__link">
+      <a href="../helm/helm_repo_add/" class="md-nav__link">
         
   
   
@@ -2498,7 +2379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_repo_index/" class="md-nav__link">
+      <a href="../helm/helm_repo_index/" class="md-nav__link">
         
   
   
@@ -2521,7 +2402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_repo_list/" class="md-nav__link">
+      <a href="../helm/helm_repo_list/" class="md-nav__link">
         
   
   
@@ -2544,7 +2425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_repo_remove/" class="md-nav__link">
+      <a href="../helm/helm_repo_remove/" class="md-nav__link">
         
   
   
@@ -2567,7 +2448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_repo_update/" class="md-nav__link">
+      <a href="../helm/helm_repo_update/" class="md-nav__link">
         
   
   
@@ -2590,7 +2471,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_rollback/" class="md-nav__link">
+      <a href="../helm/helm_rollback/" class="md-nav__link">
         
   
   
@@ -2613,7 +2494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_search/" class="md-nav__link">
+      <a href="../helm/helm_search/" class="md-nav__link">
         
   
   
@@ -2636,7 +2517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_search_hub/" class="md-nav__link">
+      <a href="../helm/helm_search_hub/" class="md-nav__link">
         
   
   
@@ -2659,7 +2540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_search_repo/" class="md-nav__link">
+      <a href="../helm/helm_search_repo/" class="md-nav__link">
         
   
   
@@ -2682,7 +2563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_show/" class="md-nav__link">
+      <a href="../helm/helm_show/" class="md-nav__link">
         
   
   
@@ -2705,7 +2586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_show_all/" class="md-nav__link">
+      <a href="../helm/helm_show_all/" class="md-nav__link">
         
   
   
@@ -2728,7 +2609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_show_chart/" class="md-nav__link">
+      <a href="../helm/helm_show_chart/" class="md-nav__link">
         
   
   
@@ -2751,7 +2632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_show_crds/" class="md-nav__link">
+      <a href="../helm/helm_show_crds/" class="md-nav__link">
         
   
   
@@ -2774,7 +2655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_show_readme/" class="md-nav__link">
+      <a href="../helm/helm_show_readme/" class="md-nav__link">
         
   
   
@@ -2797,7 +2678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_show_values/" class="md-nav__link">
+      <a href="../helm/helm_show_values/" class="md-nav__link">
         
   
   
@@ -2820,7 +2701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_status/" class="md-nav__link">
+      <a href="../helm/helm_status/" class="md-nav__link">
         
   
   
@@ -2843,7 +2724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_template/" class="md-nav__link">
+      <a href="../helm/helm_template/" class="md-nav__link">
         
   
   
@@ -2866,7 +2747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_test/" class="md-nav__link">
+      <a href="../helm/helm_test/" class="md-nav__link">
         
   
   
@@ -2889,7 +2770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_uninstall/" class="md-nav__link">
+      <a href="../helm/helm_uninstall/" class="md-nav__link">
         
   
   
@@ -2912,7 +2793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_upgrade/" class="md-nav__link">
+      <a href="../helm/helm_upgrade/" class="md-nav__link">
         
   
   
@@ -2935,7 +2816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_verify/" class="md-nav__link">
+      <a href="../helm/helm_verify/" class="md-nav__link">
         
   
   
@@ -2958,7 +2839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../helm/helm_version/" class="md-nav__link">
+      <a href="../helm/helm_version/" class="md-nav__link">
         
   
   
@@ -3026,7 +2907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../howto/_index/" class="md-nav__link">
+      <a href="../howto/" class="md-nav__link">
         
   
   
@@ -3049,7 +2930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../howto/chart_releaser_action/" class="md-nav__link">
+      <a href="../howto/chart_releaser_action/" class="md-nav__link">
         
   
   
@@ -3072,7 +2953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../howto/chart_repository_sync_example/" class="md-nav__link">
+      <a href="../howto/chart_repository_sync_example/" class="md-nav__link">
         
   
   
@@ -3095,7 +2976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../howto/charts_tips_and_tricks/" class="md-nav__link">
+      <a href="../howto/charts_tips_and_tricks/" class="md-nav__link">
         
   
   
@@ -3122,18 +3003,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -3149,7 +3032,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Intro
@@ -3160,10 +3043,43 @@
                 
   
   
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
-      <a href="../../intro/CheatSheet/" class="md-nav__link">
+      <a href="CheatSheet/" class="md-nav__link">
         
   
   
@@ -3186,30 +3102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/_index/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Introduction
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../intro/install/" class="md-nav__link">
+      <a href="install/" class="md-nav__link">
         
   
   
@@ -3232,7 +3125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/quickstart/" class="md-nav__link">
+      <a href="quickstart/" class="md-nav__link">
         
   
   
@@ -3255,7 +3148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../intro/using_helm/" class="md-nav__link">
+      <a href="using_helm/" class="md-nav__link">
         
   
   
@@ -3323,7 +3216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sdk/_index/" class="md-nav__link">
+      <a href="../sdk/" class="md-nav__link">
         
   
   
@@ -3346,7 +3239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sdk/examples/" class="md-nav__link">
+      <a href="../sdk/examples/" class="md-nav__link">
         
   
   
@@ -3369,7 +3262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sdk/gosdk/" class="md-nav__link">
+      <a href="../sdk/gosdk/" class="md-nav__link">
         
   
   
@@ -3437,7 +3330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/_index/" class="md-nav__link">
+      <a href="../topics/" class="md-nav__link">
         
   
   
@@ -3460,7 +3353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/advanced/" class="md-nav__link">
+      <a href="../topics/advanced/" class="md-nav__link">
         
   
   
@@ -3483,7 +3376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/architecture/" class="md-nav__link">
+      <a href="../topics/architecture/" class="md-nav__link">
         
   
   
@@ -3506,7 +3399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/chart_repository/" class="md-nav__link">
+      <a href="../topics/chart_repository/" class="md-nav__link">
         
   
   
@@ -3529,7 +3422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/chart_tests/" class="md-nav__link">
+      <a href="../topics/chart_tests/" class="md-nav__link">
         
   
   
@@ -3552,7 +3445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/charts/" class="md-nav__link">
+      <a href="../topics/charts/" class="md-nav__link">
         
   
   
@@ -3575,7 +3468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/charts_hooks/" class="md-nav__link">
+      <a href="../topics/charts_hooks/" class="md-nav__link">
         
   
   
@@ -3598,7 +3491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/kubernetes_apis/" class="md-nav__link">
+      <a href="../topics/kubernetes_apis/" class="md-nav__link">
         
   
   
@@ -3621,7 +3514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/kubernetes_distros/" class="md-nav__link">
+      <a href="../topics/kubernetes_distros/" class="md-nav__link">
         
   
   
@@ -3644,7 +3537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/library_charts/" class="md-nav__link">
+      <a href="../topics/library_charts/" class="md-nav__link">
         
   
   
@@ -3667,7 +3560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/permissions_sql_storage_backend/" class="md-nav__link">
+      <a href="../topics/permissions_sql_storage_backend/" class="md-nav__link">
         
   
   
@@ -3690,7 +3583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/plugins/" class="md-nav__link">
+      <a href="../topics/plugins/" class="md-nav__link">
         
   
   
@@ -3713,7 +3606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/provenance/" class="md-nav__link">
+      <a href="../topics/provenance/" class="md-nav__link">
         
   
   
@@ -3736,7 +3629,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/rbac/" class="md-nav__link">
+      <a href="../topics/rbac/" class="md-nav__link">
         
   
   
@@ -3759,7 +3652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/registries/" class="md-nav__link">
+      <a href="../topics/registries/" class="md-nav__link">
         
   
   
@@ -3782,7 +3675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/release_policy/" class="md-nav__link">
+      <a href="../topics/release_policy/" class="md-nav__link">
         
   
   
@@ -3805,7 +3698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/v2_v3_migration/" class="md-nav__link">
+      <a href="../topics/v2_v3_migration/" class="md-nav__link">
         
   
   
@@ -3828,7 +3721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topics/version_skew/" class="md-nav__link">
+      <a href="../topics/version_skew/" class="md-nav__link">
         
   
   
@@ -3871,167 +3764,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#chart" class="md-nav__link">
-    <span class="md-ellipsis">
-      Chart
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chart-archive" class="md-nav__link">
-    <span class="md-ellipsis">
-      Chart Archive
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chart-dependency-subcharts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Chart Dependency (Subcharts)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chart-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      Chart Version
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chartyaml" class="md-nav__link">
-    <span class="md-ellipsis">
-      Chart.yaml
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#helm-and-helm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Helm (and helm)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#helm-configuration-files-xdg" class="md-nav__link">
-    <span class="md-ellipsis">
-      Helm Configuration Files (XDG)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kube-config-kubeconfig" class="md-nav__link">
-    <span class="md-ellipsis">
-      Kube Config (KUBECONFIG)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lint-linting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lint (Linting)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#provenance-provenance-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Provenance (Provenance file)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#release" class="md-nav__link">
-    <span class="md-ellipsis">
-      Release
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#release-number-release-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      Release Number (Release Version)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rollback" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rollback
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#helm-library-or-sdk" class="md-nav__link">
-    <span class="md-ellipsis">
-      Helm Library (or SDK)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#repository-repo-chart-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      Repository (Repo, Chart Repository)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chart-registry-oci-based-registry" class="md-nav__link">
-    <span class="md-ellipsis">
-      Chart Registry (OCI-based Registry)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#values-values-files-valuesyaml" class="md-nav__link">
-    <span class="md-ellipsis">
-      Values (Values Files, values.yaml)
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -4049,137 +3781,8 @@
   
 
 
-<h1 id="glossary">Glossary</h1>
-<h2 id="chart">Chart</h2>
-<p>A Helm package that contains information sufficient for installing a set of
-Kubernetes resources into a Kubernetes cluster.</p>
-<p>Charts contain a <code>Chart.yaml</code> file as well as templates, default values
-(<code>values.yaml</code>), and dependencies.</p>
-<p>Charts are developed in a well-defined directory structure, and then packaged
-into an archive format called a <em>chart archive</em>.</p>
-<h2 id="chart-archive">Chart Archive</h2>
-<p>A <em>chart archive</em> is a tarred and gzipped (and optionally signed) chart.</p>
-<h2 id="chart-dependency-subcharts">Chart Dependency (Subcharts)</h2>
-<p>Charts may depend upon other charts. There are two ways a dependency may occur:</p>
-<ul>
-<li>Soft dependency: A chart may simply not function without another chart being
-  installed in a cluster. Helm does not provide tooling for this case. In this
-  case, dependencies may be managed separately.</li>
-<li>Hard dependency: A chart may contain (inside of its <code>charts/</code> directory)
-  another chart upon which it depends. In this case, installing the chart will
-  install all of its dependencies. In this case, a chart and its dependencies
-  are managed as a collection.</li>
-</ul>
-<p>When a chart is packaged (via <code>helm package</code>) all of its hard dependencies are
-bundled with it.</p>
-<h2 id="chart-version">Chart Version</h2>
-<p>Charts are versioned according to the <a href="https://semver.org">SemVer 2 spec</a>. A
-version number is required on every chart.</p>
-<h2 id="chartyaml">Chart.yaml</h2>
-<p>Information about a chart is stored in a special file called <code>Chart.yaml</code>. Every
-chart must have this file.</p>
-<h2 id="helm-and-helm">Helm (and helm)</h2>
-<p>Helm is the package manager for Kubernetes. As an operating system package
-manager makes it easy to install tools on an OS, Helm makes it easy to install
-applications and resources into Kubernetes clusters.</p>
-<p>While <em>Helm</em> is the name of the project, the command line client is also named
-<code>helm</code>. By convention, when speaking of the project, <em>Helm</em> is capitalized. When
-speaking of the client, <em>helm</em> is in lowercase.</p>
-<h2 id="helm-configuration-files-xdg">Helm Configuration Files (XDG)</h2>
-<p>Helm stores its configuration files in XDG directories. These directories are
-created the first time <code>helm</code> is run.</p>
-<h2 id="kube-config-kubeconfig">Kube Config (KUBECONFIG)</h2>
-<p>The Helm client learns about Kubernetes clusters by using files in the <em>Kube
-config</em> file format. By default, Helm attempts to find this file in the place
-where <code>kubectl</code> creates it (<code>$HOME/.kube/config</code>).</p>
-<h2 id="lint-linting">Lint (Linting)</h2>
-<p>To <em>lint</em> a chart is to validate that it follows the conventions and
-requirements of the Helm chart standard. Helm provides tools to do this, notably
-the <code>helm lint</code> command.</p>
-<h2 id="provenance-provenance-file">Provenance (Provenance file)</h2>
-<p>Helm charts may be accompanied by a <em>provenance file</em> which provides information
-about where the chart came from and what it contains.</p>
-<p>Provenance files are one part of the Helm security story. A provenance contains
-a cryptographic hash of the chart archive file, the Chart.yaml data, and a
-signature block (an OpenPGP "clearsign" block). When coupled with a keychain,
-this provides chart users with the ability to:</p>
-<ul>
-<li>Validate that a chart was signed by a trusted party</li>
-<li>Validate that the chart file has not been tampered with</li>
-<li>Validate the contents of a chart metadata (<code>Chart.yaml</code>)</li>
-<li>Quickly match a chart to its provenance data</li>
-</ul>
-<p>Provenance files have the <code>.prov</code> extension, and can be served from a chart
-repository server or any other HTTP server.</p>
-<h2 id="release">Release</h2>
-<p>When a chart is installed, the Helm library creates a <em>release</em> to track that
-installation.</p>
-<p>A single chart may be installed many times into the same cluster, and create
-many different releases. For example, one can install three PostgreSQL databases
-by running <code>helm install</code> three times with a different release name.</p>
-<h2 id="release-number-release-version">Release Number (Release Version)</h2>
-<p>A single release can be updated multiple times. A sequential counter is used to
-track releases as they change. After a first <code>helm install</code>, a release will have
-<em>release number</em> 1. Each time a release is upgraded or rolled back, the release
-number will be incremented.</p>
-<h2 id="rollback">Rollback</h2>
-<p>A release can be upgraded to a newer chart or configuration. But since release
-history is stored, a release can also be <em>rolled back</em> to a previous release
-number. This is done with the <code>helm rollback</code> command.</p>
-<p>Importantly, a rolled back release will receive a new release number.</p>
-<table>
-<thead>
-<tr>
-<th>Operation</th>
-<th>Release Number</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>install</td>
-<td>release 1</td>
-</tr>
-<tr>
-<td>upgrade</td>
-<td>release 2</td>
-</tr>
-<tr>
-<td>upgrade</td>
-<td>release 3</td>
-</tr>
-<tr>
-<td>rollback 1</td>
-<td>release 4 (but running the same config as release 1)</td>
-</tr>
-</tbody>
-</table>
-<p>The above table illustrates how release numbers increment across install,
-upgrade, and rollback.</p>
-<h2 id="helm-library-or-sdk">Helm Library (or SDK)</h2>
-<p>The Helm Library (or SDK) refers to the Go code that interacts directly with the
-Kubernetes API server to install, upgrade, query, and remove Kubernetes
-resources. It can be imported into a project to use Helm as a client library
-instead of a CLI.</p>
-<h2 id="repository-repo-chart-repository">Repository (Repo, Chart Repository)</h2>
-<p>Helm charts may be stored on dedicated HTTP servers called <em>chart repositories</em>
-(<em>repositories</em>, or just <em>repos</em>).</p>
-<p>A chart repository server is a simple HTTP server that can serve an <code>index.yaml</code>
-file that describes a batch of charts, and provides information on where each
-chart can be downloaded from. (Many chart repositories serve the charts as well
-as the <code>index.yaml</code> file.)</p>
-<p>A Helm client can point to zero or more chart repositories. By default, Helm
-clients are not configured with any chart repositories. Chart repositories can
-be added at any time using the <code>helm repo add</code> command.</p>
-<h2 id="chart-registry-oci-based-registry">Chart Registry (OCI-based Registry)</h2>
-<p>A Helm Chart Registry is an <a href="https://opencontainers.org/about/overview/">OCI-based</a> storage and distribution system that is used to host and share Helm chart packages. For more information, see the <a href="https://helm.sh/docs/topics/registries/">Helm documentation on registries</a>.</p>
-<h2 id="values-values-files-valuesyaml">Values (Values Files, values.yaml)</h2>
-<p>Values provide a way to override template defaults with your own information.</p>
-<p>Helm Charts are "parameterized", which means the chart developer may expose
-configuration that can be overridden at installation time. For example, a chart
-may expose a <code>username</code> field that allows setting a user name for a service.</p>
-<p>These exposed variables are called <em>values</em> in Helm parlance.</p>
-<p>Values can be set during <code>helm install</code> and <code>helm upgrade</code> operations, either by
-passing them in directly, or by using a <code>values.yaml</code> file.</p>
+<h1 id="introduction-to-helm">Introduction to Helm</h1>
+<p>Are you new to Helm? This is the place to start!</p>
 
 
 
@@ -4231,10 +3834,10 @@ passing them in directly, or by using a <code>values.yaml</code> file.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
