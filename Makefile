@@ -55,10 +55,12 @@ $(PYTHON_VENV):
 	$(VENV) && pip install mkdocs-material
 
 docs/index.md: helm-www
-	cp -r $</content/en/docs docs
+	mkdir -p docs
+	cp -r $</content/en/docs/* docs/
 	for f in $$(find docs/ -name _index.md); \
 	  do mv $$f $${f/_index/index}; \
 	done
+
 
 helm-www:
 	git clone -q $(HELM-DOCS-REPO)

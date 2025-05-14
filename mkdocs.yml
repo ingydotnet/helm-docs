@@ -6,3 +6,39 @@ theme:
 
 repo_name: GitHub
 repo_url: https://github.com/ingydotnet/helm-docs
+
+extra:
+  alternate:
+  - name: English
+    link: /en/docs/
+    lang: en
+  - name: Deutsch
+    link: /de/docs/
+    lang: de
+  - name: Español
+    link: /es/docs/
+    lang: es
+  - name: Français
+    link: /fr/docs/
+    lang: fr
+  - name: Ελληνικά
+    link: /gr/docs/
+    lang: gr
+  - name: 日本語
+    link: /ja/docs/
+    lang: ja
+  - name: 한국어
+    link: /ko/docs/
+    lang: ko
+  - name: Português
+    link: /pt/docs/
+    lang: pt
+  - name: Русский
+    link: /ru/docs/
+    lang: ru
+  - name: Українська
+    link: /uk/docs/
+    lang: uk
+  - name: 中文
+    link: /zh/docs/
+    lang: zh

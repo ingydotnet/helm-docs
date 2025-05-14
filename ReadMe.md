@@ -24,7 +24,7 @@ Clone this repo in a terminal and then run `make serve`.
 
 This will:
 
-* Install all the deps under `.venv`
+* Install all the deps under `.venv/`
 * Clone the Helm docs repo content
 * Copy the content pages into the `docs/` directory
 * Start a local site server: http://127.0.0.1:8000/helm-docs/
