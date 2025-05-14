@@ -1,28 +1,18 @@
-SHELL := bash
-
-ROOT := $(shell pwd -P)
+$(shell [ -d .make ] || \
+  (git clone -q https://github.com/makeplus/makes .make))
+include .make/init.mk
+include .make/python.mk
 
 HELM-DOCS-REPO := https://github.com/helm/helm-www
 
-PYTHON := $(shell command -v python3)
-PYTHON ?= $(shell command -v python)
-ifndef PYTHON
-  $(error Python doesn't seem to be installed)
-endif
-
-PYTHON_VENV := $(ROOT)/.venv
-VENV := source $(PYTHON_VENV)/bin/activate
-
 DEPS := \
-  $(PYTHON_VENV) \
+  $(PYTHON-VENV) \
   docs/index.md \
 
 SITE-DOMAIN := docs.helmys.org
 SITE-REMOTE := origin
 SITE-BRANCH := site
 
-
-default:
 
 build: site
 
@@ -41,18 +31,14 @@ publish: site
 serve: $(DIRS) $(DEPS)
 	$(VENV) && mkdocs $@
 
-clean:
+clean::
 	$(RM) -r site
 
-realclean: clean
+realclean::
 	$(RM) -r helm-www docs
 
-distclean: realclean
-	$(RM) -r $(PYTHON_VENV)
-
-$(PYTHON_VENV):
-	$(PYTHON) -mvenv $@
-	$(VENV) && pip install mkdocs-material
+distclean::
+	$(RM) -r .make
 
 docs/index.md: helm-www
 	mkdir -p docs
